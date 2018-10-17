@@ -1,4 +1,7 @@
-﻿Public Class UsuarioUserControl
+﻿Imports System.Xml
+
+Public Class UsuarioUserControl
+  Private XML_PATH As String = "cosas.xml"
 
   Private Sub UsuarioUserControl_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     For Each control As Control In Controls
