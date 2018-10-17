@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class CustomListItem
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class UsuarioUserControl
   Inherits System.Windows.Forms.UserControl
 
   'UserControl reemplaza a Dispose para limpiar la lista de componentes.
-  <System.Diagnostics.DebuggerNonUserCode()> _
+  <System.Diagnostics.DebuggerNonUserCode()>
   Protected Overrides Sub Dispose(ByVal disposing As Boolean)
     Try
       If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class CustomListItem
   'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
   'Se puede modificar usando el Diseñador de Windows Forms.  
   'No lo modifique con el editor de código.
-  <System.Diagnostics.DebuggerStepThrough()> _
+  <System.Diagnostics.DebuggerStepThrough()>
   Private Sub InitializeComponent()
     Dim Label2 As System.Windows.Forms.Label
     Dim Label4 As System.Windows.Forms.Label
@@ -28,10 +28,29 @@ Partial Class CustomListItem
     Me.LblNombre = New System.Windows.Forms.Label()
     Me.LblPuesto = New System.Windows.Forms.Label()
     Me.LblNivel = New System.Windows.Forms.Label()
+    Me.BtnCosas = New System.Windows.Forms.Button()
     Label2 = New System.Windows.Forms.Label()
     Label4 = New System.Windows.Forms.Label()
     CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
     Me.SuspendLayout()
+    '
+    'Label2
+    '
+    Label2.AutoSize = True
+    Label2.Location = New System.Drawing.Point(110, 29)
+    Label2.Name = "Label2"
+    Label2.Size = New System.Drawing.Size(43, 13)
+    Label2.TabIndex = 2
+    Label2.Text = "Puesto:"
+    '
+    'Label4
+    '
+    Label4.AutoSize = True
+    Label4.Location = New System.Drawing.Point(110, 42)
+    Label4.Name = "Label4"
+    Label4.Size = New System.Drawing.Size(34, 13)
+    Label4.TabIndex = 4
+    Label4.Text = "Nivel:"
     '
     'PictureBox1
     '
@@ -51,15 +70,6 @@ Partial Class CustomListItem
     Me.LblNombre.TabIndex = 1
     Me.LblNombre.Text = "Nombre del usuario"
     '
-    'Label2
-    '
-    Label2.AutoSize = True
-    Label2.Location = New System.Drawing.Point(110, 29)
-    Label2.Name = "Label2"
-    Label2.Size = New System.Drawing.Size(43, 13)
-    Label2.TabIndex = 2
-    Label2.Text = "Puesto:"
-    '
     'LblPuesto
     '
     Me.LblPuesto.AutoSize = True
@@ -68,15 +78,6 @@ Partial Class CustomListItem
     Me.LblPuesto.Size = New System.Drawing.Size(94, 13)
     Me.LblPuesto.TabIndex = 3
     Me.LblPuesto.Text = "Puesto del usuario"
-    '
-    'Label4
-    '
-    Label4.AutoSize = True
-    Label4.Location = New System.Drawing.Point(110, 42)
-    Label4.Name = "Label4"
-    Label4.Size = New System.Drawing.Size(34, 13)
-    Label4.TabIndex = 4
-    Label4.Text = "Nivel:"
     '
     'LblNivel
     '
@@ -87,18 +88,28 @@ Partial Class CustomListItem
     Me.LblNivel.TabIndex = 5
     Me.LblNivel.Text = "Nivel del usuario"
     '
-    'CustomListItem
+    'BtnCosas
+    '
+    Me.BtnCosas.Location = New System.Drawing.Point(333, 29)
+    Me.BtnCosas.Name = "BtnCosas"
+    Me.BtnCosas.Size = New System.Drawing.Size(75, 54)
+    Me.BtnCosas.TabIndex = 6
+    Me.BtnCosas.Text = "Hacer cosas"
+    Me.BtnCosas.UseVisualStyleBackColor = True
+    '
+    'UsuarioUserControl
     '
     Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
     Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+    Me.Controls.Add(Me.BtnCosas)
     Me.Controls.Add(Me.LblNivel)
     Me.Controls.Add(Label4)
     Me.Controls.Add(Me.LblPuesto)
     Me.Controls.Add(Label2)
     Me.Controls.Add(Me.LblNombre)
     Me.Controls.Add(Me.PictureBox1)
-    Me.Name = "CustomListItem"
-    Me.Size = New System.Drawing.Size(386, 112)
+    Me.Name = "UsuarioUserControl"
+    Me.Size = New System.Drawing.Size(424, 112)
     CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
     Me.ResumeLayout(False)
     Me.PerformLayout()
@@ -109,4 +120,5 @@ Partial Class CustomListItem
   Friend WithEvents LblNombre As Label
   Friend WithEvents LblPuesto As Label
   Friend WithEvents LblNivel As Label
+  Friend WithEvents BtnCosas As Button
 End Class

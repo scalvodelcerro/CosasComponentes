@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomListItem.Designer.vb">
-      <DependentUpon>CustomListItem.vb</DependentUpon>
+    <Compile Include="UsuarioUserControl.Designer.vb">
+      <DependentUpon>UsuarioUserControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="CustomListItem.vb">
+    <Compile Include="UsuarioUserControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -103,8 +103,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomListItem.resx">
-      <DependentUpon>CustomListItem.vb</DependentUpon>
+    <EmbeddedResource Include="UsuarioUserControl.resx">
+      <DependentUpon>UsuarioUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
